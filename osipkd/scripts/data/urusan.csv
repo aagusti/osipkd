@@ -1,0 +1,39 @@
+id,kode,disabled,created,create_uid,nama
+1,0,0,2015-01-13 02:28:46.148491,1,Urusan Umum
+2,0.00,0,2015-01-13 02:28:46.152032,1,Urusan Umum
+3,1,0,2015-01-13 02:28:46.163044,1,URUSAN WAJIB
+4,1.01,0,2015-01-13 02:28:46.166032,1,Pendidikan
+5,1.02,0,2015-01-13 02:28:46.168354,1,Kesehatan
+6,1.03,0,2015-01-13 02:28:46.171022,1,Pekerjaan Umum
+7,1.04,0,2015-01-13 02:28:46.174756,1,Perumahan
+8,1.05,0,2015-01-13 02:28:46.178119,1,Penataan Ruang
+9,1.06,0,2015-01-13 02:28:46.181754,1,Perencanaan Pembangunan
+10,1.07,0,2015-01-13 02:28:46.184167,1,Perhubungan
+11,1.08,0,2015-01-13 02:28:46.186989,1,Lingkungan Hidup
+12,1.09,0,2015-01-13 02:28:46.189236,1,Pertanahan
+13,1.10,0,2015-01-13 02:28:46.191807,1,Kependudukan dan Catatan Sipil
+14,1.11,0,2015-01-13 02:28:46.195276,1,Pemberdayaan Perempuan dan Perlindungan Anak
+15,1.12,0,2015-01-13 02:28:46.197834,1,Keluarga Berencana dan Keluarga Sejahtera
+16,1.13,0,2015-01-13 02:28:46.200177,1,Sosial
+17,1.14,0,2015-01-13 02:28:46.20403,1,Ketenagakerjaan
+18,1.15,0,2015-01-13 02:28:46.207193,1,Koperasi dan Usaha Kecil Menengah
+19,1.16,0,2015-01-13 02:28:46.210625,1,Penanaman Modal
+20,1.17,0,2015-01-13 02:28:46.212955,1,Kebudayaan
+21,1.18,0,2015-01-13 02:28:46.214863,1,Kepemudaan dan Olah Raga
+22,1.19,0,2015-01-13 02:28:46.218148,1,Kesatuan Bangsa dan Politik Dalam Negeri
+23,1.20,0,2015-01-13 02:28:46.220633,1,Otda, Pem. Umum, AKD, Prkt Daerah, Kepeg, Prsndian
+24,1.21,0,2015-01-13 02:28:46.223044,1,Ketahanan Pangan
+25,1.22,0,2015-01-13 02:28:46.226743,1,Pemberdayaan Masyarakat Desa
+26,1.23,0,2015-01-13 02:28:46.229277,1,Statistik
+27,1.24,0,2015-01-13 02:28:46.231789,1,Kearsipan
+28,1.25,0,2015-01-13 02:28:46.23416,1,Komunikasi dan Informatika
+29,1.26,0,2015-01-13 02:28:46.237556,1,Perpustakaan
+30,2,0,2015-01-13 02:28:46.239911,1,URUSAN PILIHAN
+31,2.01,0,2015-01-13 02:28:46.244013,1,Pertanian
+32,2.02,0,2015-01-13 02:28:46.246161,1,Kehutanan
+33,2.03,0,2015-01-13 02:28:46.250726,1,Energi dan Sumberdaya Mineral
+34,2.04,0,2015-01-13 02:28:46.254721,1,Pariwisata
+35,2.05,0,2015-01-13 02:28:46.257457,1,Kelautan dan Perikanan
+36,2.06,0,2015-01-13 02:28:46.261243,1,Perdagangan
+37,2.07,0,2015-01-13 02:28:46.263816,1,Industri
+38,2.08,0,2015-01-13 02:28:46.26831,1,Ketransmigrasian

@@ -1,0 +1,90 @@
+kode,nama,path,perm_name,disabled,created,create_uid
+"home","Beranda","/","''",0,"2015-03-08 16:45:45",1
+"login","Masuk","/login","''",0,"2015-03-08 16:45:45",1
+"logout","Logout","/logout","view",0,"2015-03-08 16:45:45",1
+"password","Ubah password","/password","view",0,"2015-03-08 16:45:45",1
+"forbidden","Forbidden","/forbidden","view",0,"2015-03-08 16:45:45",1
+"user","Users","/user","view",0,"2015-03-08 16:45:45",1
+"user-act","Baca User ","/user/{act}/act","view",0,"2015-03-08 16:45:45",1
+"user-add","Tambah user","/user/add","view",0,"2015-03-08 16:45:45",1
+"user-edit","Edit user","/user/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"user-delete","Hapus user","/user/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"group","Group","/group","view",0,"2015-03-08 16:45:45",1
+"group-add","Tambah Group","/group/add","view",0,"2015-03-08 16:45:45",1
+"group-act","Baca Group","/group/{act}/act","view",0,"2015-03-08 16:45:45",1
+"group-edit","Edit Group","/group/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"group-delete","Hapus Group","/group/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"user-group","User Group","/user-group","view",0,"2015-03-08 16:45:45",1
+"user-group-act","User Group Action","/user-group/{act}/act","view",0,"2015-03-08 16:45:45",1
+"user-group-add","Tambah User Group","/user-group/add","view",0,"2015-03-08 16:45:45",1
+"user-group-edit","Edit User Group","/user-group/{id}/{id2}/edit","view",0,"2015-03-08 16:45:45",1
+"user-group-delete","Hapus User Group","/user-group/{id}/{id2}/delete","view",0,"2015-03-08 16:45:45",1
+"groupperm","Group Permission","/groupperm","view",0,"2015-03-08 16:45:45",1
+"groupperm-act","Group Permission Action","/groupperm/{act}/act","view",0,"2015-03-08 16:45:45",1
+"groupperm-add","Tambah Group Permission","/groupperm/add","view",0,"2015-03-08 16:45:45",1
+"groupperm-delete","Hapus Group Permission","/groupperm/{id}/{id2}/delete","view",0,"2015-03-08 16:45:45",1
+"routes","Route","/group-route","view",0,"2015-03-08 16:45:45",1
+"routes-act","Route Action","/group-route/{act}/act","view",0,"2015-03-08 16:45:45",1
+"routes-add","Tambah Group Route","/group-route/add","view",0,"2015-03-08 16:45:45",1
+"routes-delete","Hapus Group Route","/group-route/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"routes-edit","Edit Group Route","/group-route/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"group-routes","Group Route","/group-route","view",0,"2015-03-08 16:45:45",1
+"group-routes-act","Group Route Action","/group-route/{act}/act","view",0,"2015-03-08 16:45:45",1
+"group-routes-add","Tambah Group Route","/group-route/add","view",0,"2015-03-08 16:45:45",1
+"group-routes-delete","Hapus Group Route","/group-route/{id}/{id2}/delete","view",0,"2015-03-08 16:45:45",1
+"app","Aplication","/app","''",0,"2015-03-08 16:45:45",1
+"app-act","Aplication","/app/{act}/act","''",0,"2015-03-08 16:45:45",1
+"app-add","Aplication","/app/add","''",0,"2015-03-08 16:45:45",1
+"app-edit","Aplication","/app/{id}/edit","''",0,"2015-03-08 16:45:45",1
+"app-delete","Aplication","/app/{id}/delete","''",0,"2015-03-08 16:45:45",1
+"change-act","Change Act","/change/{act}/act","''",0,"2015-03-08 16:45:45",1
+"admin","Admin","/admin","view",0,"2015-03-08 16:45:45",1
+"main","MAIN","/main","view",0,"2015-03-08 16:45:45",1
+"rekening","Aplication","/rekening","''",0,"2015-03-08 16:45:45",1
+"rekening-act","Aplication","/rekening/{act}/act","''",0,"2015-03-08 16:45:45",1
+"rekening-add","Aplication","/rekening/add","''",0,"2015-03-08 16:45:45",1
+"rekening-edit","Aplication","/rekening/{id}/edit","''",0,"2015-03-08 16:45:45",1
+"rekening-delete","Aplication","/rekening/{id}/delete","''",0,"2015-03-08 16:45:45",1
+"urusan","Urusan","/urusan","''",0,"2015-03-08 16:45:45",1
+"urusan-act","Urusan Act","/urusan/{act}/act","''",0,"2015-03-08 16:45:45",1
+"urusan-add","Urusan Add","/urusan/add","''",0,"2015-03-08 16:45:45",1
+"urusan-edit","Urusan Edit","/urusan/{id}/edit","''",0,"2015-03-08 16:45:45",1
+"urusan-delete","Urusan Delete","/urusan/{id}/delete","''",0,"2015-03-08 16:45:45",1
+"unit","Aplication","/unit","''",0,"2015-03-08 16:45:45",1
+"unit-act","Aplication","/unit/{act}/act","''",0,"2015-03-08 16:45:45",1
+"unit-add","Aplication","/unit/add","''",0,"2015-03-08 16:45:45",1
+"unit-edit","Aplication","/unit/{id}/edit","''",0,"2015-03-08 16:45:45",1
+"unit-delete","Aplication","/unit/{id}/delete","''",0,"2015-03-08 16:45:45",1
+"user-unit","User unit","/user/unit","view",0,"2015-03-08 16:45:45",1
+"user-unit-act","User unit Action","/user/unit/{act}/act","view",0,"2015-03-08 16:45:45",1
+"user-unit-add","Tambah User unit","/user/unit/add","view",0,"2015-03-08 16:45:45",1
+"user-unit-edit","Edit User unit","/user/unit/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"user-unit-delete","Hapus User unit","/user/unit/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"carousel","Carousel","/carousel","view",0,"2015-03-08 16:45:45",1
+"carousel-act","Carousel Action","/carousel/{act}/act","view",0,"2015-03-08 16:45:45",1
+"carousel-add","Carousel Add","/carousel/add","view",0,"2015-03-08 16:45:45",1
+"carousel-edit","Carousel Edit","/carousel/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"carousel-delete","Carousel Delete","/carousel/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"eis","EIS","/eis","view",0,"2015-03-08 16:45:45",1
+"eis-act","EIS Act","/eis/{act}/act","view",0,"2015-03-08 16:45:45",1
+"eis-calc-all","EIS Calc ALL","/eis-calc-all","view",0,"2015-03-08 16:45:45",1
+"eis-chart","Chart","/eis-chart","view",0,"2015-03-08 16:45:45",1
+"eis-chart-act","EIS Chart Action","/eis-chart/{act}/act","view",0,"2015-03-08 16:45:45",1
+"eis-chart-add","EIS Chart Add","/eis-chart/add","view",0,"2015-03-08 16:45:45",1
+"eis-chart-edit","EIS Chart Edit","/eis-chart/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"eis-chart-delete","EIS Chart Delet","/eis-chart/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"eis-chart-item","Chart Item","/eis-chart-item/{chart_id}","view",0,"2015-03-08 16:45:45",1
+"eis-chart-item-act","EIS Chart Item Action","/eis-chart-item/{chart_id}/{act}/act","view",0,"2015-03-08 16:45:45",1
+"eis-chart-item-add","EIS Chart Item Add","/eis-chart-item/{chart_id}/add","view",0,"2015-03-08 16:45:45",1
+"eis-chart-item-edit","EIS Chart Item Edit","/eis-chart-item/{chart_id}/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"eis-chart-item-delete","EIS Chart Item Delet","/eis-chart-item/{chart_id}/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"eis-item","EIS Item","/eis-chart","view",0,"2015-03-08 16:45:45",1
+"eis-item-act","EIS Item Action","/eis-item/{act}/act","view",0,"2015-03-08 16:45:45",1
+"eis-item-add","EIS Item Add","/eis-item/add","view",0,"2015-03-08 16:45:45",1
+"eis-item-edit","EIS Item Edit","/eis-item/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"eis-item-delete","EIS Item Delete","/eis-item/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"eis-slide","EIS Slide","/eis-slide","view",0,"2015-03-08 16:45:45",1
+"eis-slide-act","EIS Slide Act","/eis-slide/{act}/act","view",0,"2015-03-08 16:45:45",1
+"eis-slide-add","EIS Slide Add","/eis-slide/add","view",0,"2015-03-08 16:45:45",1
+"eis-slide-edit","EIS Slide Edit","/eis-slide/{id}/edit","view",0,"2015-03-08 16:45:45",1
+"eis-slide-delete","EIS Slide Delete","/eis-slide/{id}/delete","view",0,"2015-03-08 16:45:45",1
