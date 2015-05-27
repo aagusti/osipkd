@@ -12,28 +12,22 @@ from osipkd.tools import row2dict
 ########
 # APP Home #
 ########
-class eis(BaseViews):
+class dashboard(BaseViews):
     def cek_value(self,value,devider,simbol):
         if value<devider:
             return "{0:,.0f}".format(value)
         else:
             return "{0:,.2f} {1}".format(value/devider,simbol) 
         
-    @view_config(route_name='eis', renderer='templates/home.pt')
+    @view_config(route_name='dashboard', renderer='templates/home.pt')
     def view_app(self):
         tahun = self.session['tahun']
-        datas = DBSession.query(Slide).filter(Slide.disabled==0).order_by(Slide.order_id) or {}
-            
-        tab_datas = DBSession.query(Slide).filter(Slide.source_type=='grid').order_by(Slide.order_id) or {}
-        line_datas = DBSession.query(Slide).filter(Slide.source_type=='chart-line').order_by(Slide.order_id)or {}
-        bar_datas = DBSession.query(Slide).filter(Slide.source_type=='chart-bar').order_by(Slide.order_id)or {}
-        pie_datas = DBSession.query(Slide).filter(Slide.source_type=='chart-pie').order_by(Slide.order_id)or {}
-            
-        return dict(project='EIS', datas=datas, tab_datas=tab_datas,
-                    line_datas=line_datas, bar_datas=bar_datas,
-                    pie_datas=pie_datas, )#, datas=Eis.sum_order_id('2014'))
+        datas = DBSession.query(Slide).filter(Slide.disabled==0).order_by(Slide.order_id)
+        if not datas:
+            datas = {}
+        return dict(project='EIS', datas=datas)#, datas=Eis.sum_order_id('2014'))
 
-    @view_config(route_name='eis-act', renderer='json')
+    @view_config(route_name='dashboard-act', renderer='json')
     def view_app_act(self):
         tahun = self.session['tahun']
         req    =  self.request

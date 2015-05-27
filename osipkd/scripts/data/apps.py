@@ -1,5 +1,5 @@
 AppsData = [
-    """dict(
+    dict(
         id=1,
         kode='admin',
         nama='Administrator',
@@ -7,14 +7,21 @@ AppsData = [
         ),
     dict(
         id=2,
-        kode='gaji',
-        nama='Gaji Pegawai dan Potongan',
+        kode='eis',
+        nama='Eksekutif Summary',
         tahun=None,
         ),
     dict(
         id=3,
-        kode='eis',
-        nama='Eksekutif Summary',
+        kode='dashboard',
+        nama='DASHBOARD',
+        tahun=None,
+        ),
+        
+    """dict(
+        id=2,
+        kode='gaji',
+        nama='Gaji Pegawai dan Potongan',
         tahun=None,
         ),
     dict(

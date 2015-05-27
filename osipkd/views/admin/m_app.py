@@ -189,6 +189,10 @@ class view_app(BaseViews):
         elif SESS_EDIT_FAILED in request.session:
             return self.session_failed(SESS_EDIT_FAILED)
         values = row.to_dict()
+        for value in values:
+            if not values[value]:
+                values[value] = colander.null
+        
         return dict(form=form.render(appstruct=values))
 
     ##########

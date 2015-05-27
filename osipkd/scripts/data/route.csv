@@ -65,6 +65,9 @@ kode,nama,path,perm_name,disabled,created,create_uid
 "carousel-add","Carousel Add","/carousel/add","view",0,"2015-03-08 16:45:45",1
 "carousel-edit","Carousel Edit","/carousel/{id}/edit","view",0,"2015-03-08 16:45:45",1
 "carousel-delete","Carousel Delete","/carousel/{id}/delete","view",0,"2015-03-08 16:45:45",1
+"dashboard","EIS","/dashboard","view",0,"2015-03-08 16:45:45",1
+"dashboard-act","EIS Act","/dashboard/{act}/act","view",0,"2015-03-08 16:45:45",1
+"dashboard-calc-all","EIS Calc ALL","/dashboad-calc-all","view",0,"2015-03-08 16:45:45",1
 "eis","EIS","/eis","view",0,"2015-03-08 16:45:45",1
 "eis-act","EIS Act","/eis/{act}/act","view",0,"2015-03-08 16:45:45",1
 "eis-calc-all","EIS Calc ALL","/eis-calc-all","view",0,"2015-03-08 16:45:45",1

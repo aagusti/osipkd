@@ -7,10 +7,58 @@
 </div>
 
 <div metal:fill-slot="content">
-    <link href="/static/js/chart/legend/legend.css" rel="stylesheet"-->    
-    <script type="text/javascript"  src="/static/js/chart/Chart.min.js"> </script>
-    <script type="text/javascript"  src="/static/js/chart/legend/legend.js"> </script>
-    
+  <link href="/static/css/navbar-fixed-left.css" rel="stylesheet"-->    
+  <link href="/static/js/chart/legend/legend.css" rel="stylesheet"-->    
+  <script type="text/javascript"  src="/static/js/chart/Chart.min.js"> </script>
+  <script type="text/javascript"  src="/static/js/chart/legend/legend.js"> </script>
+  
+  <div class="nav-side-menu">
+    <div class="brand">Brand Logo</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+      <ul id="menu-content" class="menu-content collapse out">
+        <li>
+          <a href="#">
+            <i class="fa fa-dashboard fa-lg"></i> Executive Summary
+          </a>
+        </li>
+        <li  data-toggle="collapse" data-target="#tabular" class="collapsed active">
+          <a href="#"><i class="fa fa-gift fa-lg"></i> Tabular <span class="arrow"></span></a>
+        </li>
+        <ul class="sub-menu collapse" id="tabular">
+          <li tal:repeat="dat tab_datas"><a href="#" onclick="javascript:hide_other();$('#grid-${dat.id}').show();">${dat.nama}</a>
+
+          </li>
+        </ul>
+        
+        <li data-toggle="collapse" data-target="#line" class="collapsed">
+          <a href="#"><i class="fa fa-globe fa-lg"></i> Line Graph <span class="arrow"></span></a>
+        </li>  
+        
+        <ul class="sub-menu collapse" id="line">
+          <li tal:repeat="dat line_datas"><a href="#" onclick="javascript:hide_other();$('#chart-line-${dat.id}').show();">${dat.nama}</a></li>
+        </ul>
+        
+        <li data-toggle="collapse" data-target="#bar" class="collapsed">
+          <a href="#"><i class="fa fa-car fa-lg"></i> Bar Graph <span class="arrow"></span></a>
+        </li>
+        
+        <ul class="sub-menu collapse" id="bar">
+          <li tal:repeat="dat bar_datas"><a href="#" onclick="javascript:hide_other();$('#chart-bar-${dat.id}').show();">${dat.nama}</a></li>
+        </ul>
+
+        <li data-toggle="collapse" data-target="#pie" class="collapsed">
+          <a href="#"><i class="fa fa-car fa-lg"></i> Pie Graph <span class="arrow"></span></a>
+        </li>
+        <ul class="sub-menu collapse" id="pie">
+          <li tal:repeat="dat pie_datas"><a href="#" onclick="javascript:hide_other();$('#chart-pie-${dat.id}').show();">${dat.nama}</a></li>
+        </ul>
+ 
+      
+      </ul>
+    </div>
+  </div>
+  
     <div metal:define-slot="content"></div> 
 </div>
 <div metal:fill-slot="scripts">
