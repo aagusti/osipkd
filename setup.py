@@ -7,14 +7,14 @@ here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, 'README.txt')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
-requires=['pyramid>=1.5a2',
+requires=['pyramid >= 1.5, < 1.6a',
           'SQLAlchemy',
           'transaction',
           'pyramid_tm',
           'pyramid_debugtoolbar',
           'zope.sqlalchemy',          
           'waitress',
-          'ziggurat-foundations',
+          'ziggurat-foundations >= 0.5, < 0.6',
           'colander',
           'deform>=2.0a2',
           'pyramid_chameleon',
@@ -22,6 +22,7 @@ requires=['pyramid>=1.5a2',
           'alembic>=0.3.4',
           'pyramid_beaker',
           'pytz',
+          'xlrd',
          ]
 
 if sys.argv[1:] and sys.argv[1] == 'develop-use-pip':
