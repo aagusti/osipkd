@@ -23,6 +23,8 @@ requires=['pyramid >= 1.5, < 1.6a',
           'pyramid_beaker',
           'pytz',
           'xlrd',
+          'sqlalchemy-datatables == 0.1.6',
+          'pyJasper',
          ]
 
 if sys.argv[1:] and sys.argv[1] == 'develop-use-pip':
