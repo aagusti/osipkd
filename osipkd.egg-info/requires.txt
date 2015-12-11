@@ -1,11 +1,11 @@
-pyramid>=1.5a2
+pyramid >= 1.5, < 1.6a
 SQLAlchemy
 transaction
 pyramid_tm
 pyramid_debugtoolbar
 zope.sqlalchemy
 waitress
-ziggurat-foundations
+ziggurat-foundations >= 0.5, < 0.6
 colander
 deform>=2.0a2
 pyramid_chameleon
@@ -13,3 +13,6 @@ psycopg2
 alembic>=0.3.4
 pyramid_beaker
 pytz
+xlrd
+sqlalchemy-datatables == 0.1.6
+pyJasper

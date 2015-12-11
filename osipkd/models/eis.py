@@ -42,7 +42,10 @@ class Eis(DefaultModel, Base):
     order_id   = Column(Integer)
     is_aktif   = Column(SmallInteger)
     disabled   = Column(SmallInteger, default=0)
-    
+    updated    = Column(DateTime)
+    created    = Column(DateTime)
+    create_uid = Column(Integer)
+    update_uid = Column(Integer)
 
     @classmethod
     def sum_data(cls, kode, tahun):
@@ -107,6 +110,10 @@ class ChartItem(NamaModel, Base):
     color = Column(String(6))
     highlight = Column(String(6))
     is_sum   = Column(SmallInteger, default=0)
+    updated    = Column(DateTime)
+    created    = Column(DateTime)
+    create_uid = Column(Integer)
+    update_uid = Column(Integer)
     chart   = relationship("Chart")
     
 class LastUpdate(DefaultModel, Base):
