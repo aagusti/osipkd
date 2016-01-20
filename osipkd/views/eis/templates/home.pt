@@ -26,13 +26,31 @@
           color: #777;
           font-size: 40px;
           font-weight: normal;
+          /* Tambahan */
+          padding-left:0px;          
       }
+      /* Tambahan */
+      @media (min-width: 767px) {
+      .judul {
+          margin-top: 10px;
+          color: #777;
+          font-size: 40px;
+          font-weight: normal;
+          padding-left:320px;          
+      }
+      }      
       .subjudul {
           margin-bottom: 0px;
           margin-bottom: 20px;
           color: #777;
-          font-size: 30px;
-          font-weight: normal;
+          /* Tambahan */
+          padding-left:0px;          
+      }
+      /* Tambahan */
+      @media (min-width: 767px) {
+      .subjudul {
+          padding-left:320px;
+      }
       }
       .alert {
           border-radius: 0px !important;
@@ -47,7 +65,7 @@
           margin-bottom: 4px !important;
       }
   </style>
-    <div class="well" style="background-color:rgb(255,255,255); padding-top:75px; padding-left:320px;">
+    <div class="well" style="background-color:rgb(255,255,255); padding-top:75px;">
       <div class="judul">
           <center>
           <div class="row">
@@ -63,13 +81,14 @@
       </div>
     </div>
     
-    <div  style="background-color:rgb(255,255,255); padding-left:320px;">
+    <div  style="background-color:rgb(255,255,255);">
+      <div class="subjudul">
       <div class="col-md-12 data" id="welcome" style="margin-bottom:50px;">
         <center>
           <div class="row">
             <div class="col-md-12">
               <h3 style="margin-top:5px;">SELAMAT DATANG</h3>
-              <h4>SILAHKAN PILIH MENU DI SEBELAH KIRI LAYAR</h4>
+              <h4>SILAHKAN PILIH MENU DI SEBELAH KIRI / ATAS LAYAR</h4>
             </div>
 
           </div>
@@ -405,6 +424,7 @@
           </script>
         </div>
       </div>
+    </div>
     </div>
 </div>
 </html>
