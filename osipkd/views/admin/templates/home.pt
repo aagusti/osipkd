@@ -3,9 +3,9 @@
 
 <!-- Main component for a primary marketing message or call to action -->
 <div class="well">
-<h1>o-SIPKD</h1>
-<p><img src="/static/img/pyramid.png" class="img-float img-thumbnail"/>
-Selamat Datang di Module Administrasi <code>${project}</code>
+<h1>Eksekutif Summary</h1>
+<p><img src="/static/img/logo.png" class="img-float img-thumbnail"/>
+Selamat Datang di Module Administrasi <code>Eksekutif Summary</code>
 <p>Module ini digunakan untuk melakukan administrasi terhadap aplikasi.
    <ul>
       <li>Administrasi
