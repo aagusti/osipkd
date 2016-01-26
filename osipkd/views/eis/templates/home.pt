@@ -43,10 +43,8 @@
           margin-bottom: 0px;
           margin-bottom: 20px;
           color: #777;
-          /* Tambahan */
           padding-left:0px;          
       }
-      /* Tambahan */
       @media (min-width: 767px) {
       .subjudul {
           padding-left:320px;
@@ -73,7 +71,7 @@
               <img class="" src="/static/img/logo.png" style="height:80px; width:80px;padding-bottom:5px;">
               </div>
               <div class="col-md-8">
-              <h3 style="margin-top:5px;">SUMMARY EXECUTIVE PAJAK DAERAH</h3>
+              <h3 style="margin-top:5px;">EKSEKUTIF SUMMARY PAJAK DAERAH</h3>
               <h4>Tahun ${request.session['tahun']}</h4>
               </div>
           </div>
@@ -238,6 +236,27 @@
               ]
 
             }
+            
+            Chart.defaults.global.scaleLabel = function(label){
+                return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+                // return parseInt( label.value ).toLocaleString();
+                /*
+                This doesn't work in all browsers unfortunately yet:
+                    parseInt( '1000' ).toLocaleString()
+                    Result in Safari: 1.000
+                    Result in FF und Chrome: 1.111
+
+                    parseFloat( '1000.33' ).toLocaleString()
+                    Result in Safari: 1000.33
+                    Result in FF und Chrome: 1.000,33
+                */
+            };
+
+            Chart.defaults.global.multiTooltipTemplate = function(label){
+                return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
+            ; // "<%= value %>";
+
                                           
             $(function(){
               var ctx_${dat.id} = document.getElementById("canvas_${dat.id}").getContext("2d");
@@ -270,8 +289,6 @@
               });
             });
 
-            
-          
           </script>
       
         </div>
@@ -328,7 +345,27 @@
                   ]
 
                 }
-                
+
+                Chart.defaults.global.scaleLabel = function(label){
+                    return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+                    // return parseInt( label.value ).toLocaleString();
+                    /*
+                    This doesn't work in all browsers unfortunately yet:
+                        parseInt( '1000' ).toLocaleString()
+                        Result in Safari: 1.000
+                        Result in FF und Chrome: 1.111
+
+                        parseFloat( '1000.33' ).toLocaleString()
+                        Result in Safari: 1000.33
+                        Result in FF und Chrome: 1.000,33
+                    */
+                };
+
+                Chart.defaults.global.multiTooltipTemplate = function(label){
+                    return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
+                ; // "<%= value %>";
+
                 var ctx_${dat.id} = $("#canvas_${dat.id}").get(0).getContext("2d");
                   
                 $(function(){
