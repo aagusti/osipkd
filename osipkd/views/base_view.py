@@ -93,7 +93,7 @@ class BaseViews(object):
         
 
     def _DTstrftime(self, chain):
-        ret = chain and datetime.strftime(chain, '%d-%m-%Y')
+        ret = chain and datetime.strftime(chain, '%d-%m-%Y %H:%M:%S')
         if ret:
             return ret
         else:

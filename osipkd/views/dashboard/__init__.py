@@ -44,9 +44,9 @@ class dashboard(BaseViews):
             for row in rows:
                 row_dicted = row2dict(row)
                 amt_hari   =  float(row_dicted['amt_hari'])
-                amt_minggu =  float(row_dicted['amt_minggu'])+amt_hari
-                amt_bulan  =  float(row_dicted['amt_bulan'])+amt_hari
-                amt_tahun  =  float(row_dicted['amt_tahun'])+amt_bulan
+                amt_minggu =  float(row_dicted['amt_minggu']) #+amt_hari
+                amt_bulan  =  float(row_dicted['amt_bulan']) #+amt_hari
+                amt_tahun  =  float(row_dicted['amt_tahun']) #+amt_bulan
                 json_data['success']= True
                 json_data['tahun']  = self.cek_value(amt_tahun,1000000000, 'M')
                 json_data['bulan']  = self.cek_value(amt_bulan,1000000000, 'M')

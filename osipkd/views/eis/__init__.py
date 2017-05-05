@@ -17,7 +17,7 @@ class eis(BaseViews):
         if value<devider:
             return "{0:,.0f}".format(value)
         else:
-            return "{0:,.2f} {1}".format(value/devider,simbol) 
+            return "{0:,.0f} {1}".format(value/devider,simbol) 
         
     @view_config(route_name='eis', renderer='templates/home.pt')
     def view_app(self):
@@ -50,14 +50,14 @@ class eis(BaseViews):
             for row in rows:
                 row_dicted = row2dict(row)
                 amt_hari   =  float(row_dicted['amt_hari'])
-                amt_minggu =  float(row_dicted['amt_minggu'])+amt_hari
-                amt_bulan  =  float(row_dicted['amt_bulan'])+amt_hari
-                amt_tahun  =  float(row_dicted['amt_tahun'])+amt_bulan
+                amt_minggu =  float(row_dicted['amt_minggu']) #+amt_hari
+                amt_bulan  =  float(row_dicted['amt_bulan'])  #+amt_hari
+                amt_tahun  =  float(row_dicted['amt_tahun'])  #+amt_bulan
                 json_data['success']= True
-                json_data['tahun']  = self.cek_value(amt_tahun,1000000000, 'M')
-                json_data['bulan']  = self.cek_value(amt_bulan,1000000000, 'M')
-                json_data['minggu'] = self.cek_value(amt_minggu,1000000000, 'M')
-                json_data['hari']   = self.cek_value(amt_hari,1000000000, 'M')
+                json_data['tahun']  = self.cek_value(amt_tahun,1, '')
+                json_data['bulan']  = self.cek_value(amt_bulan,1, '')
+                json_data['minggu'] = self.cek_value(amt_minggu,1, '')
+                json_data['hari']   = self.cek_value(amt_hari,1, '')
                 
             return json_data
 

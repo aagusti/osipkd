@@ -3,11 +3,11 @@
 
 <!-- Main component for a primary marketing message or call to action -->
 <div class="well">
-<h1>o-SIPKD</h1>
-<p><img src="/static/img/pyramid.png" class="img-float img-thumbnail"/>
-Selamat Datang di Aplikasi <code>${project}</code>
+<h1>Eksekutif Summary</h1>
+<p><img src="/static/img/logo.png" class="img-float img-thumbnail"/>
+Selamat Datang di Aplikasi <code>Eksekutif Summary</code>
 
-<p>Aplikasi o-SIPKD adalah aplikasi yang didalamnya terdapat module-module 
+<p>Aplikasi Eksekutif Summary adalah aplikasi yang didalamnya terdapat module-module 
    yang dapat digunakan untuk melakukan proses otomasi pada pemerintahan daerah
    
 <p>Aplikasi ini dibangun dengan berbasiskan opensource yang terdiri dari.

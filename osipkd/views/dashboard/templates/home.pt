@@ -50,7 +50,7 @@
                   <img class="" src="/static/img/logo.png" style="height:80px; width:80px;padding-bottom:5px;">
                   </div>
                   <div class="col-md-8">
-                  <h3 style="margin-top:5px;">SUMMARY EXECUTIVE PAJAK DAERAH</h3>
+                  <h3 style="margin-top:5px;">EKSEKUTIF SUMMARY PAJAK DAERAH</h3>
                   <h4>Tahun ${request.session['tahun']}</h4>
                   </div>
               </div>
@@ -219,6 +219,14 @@
 
                             }
                                                         
+            Chart.defaults.global.scaleLabel = function(label){
+                return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            };
+
+            Chart.defaults.global.multiTooltipTemplate = function(label){
+                return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
+            ;
+
                             $(function(){
                               var ctx_${dat.id} = document.getElementById("canvas_${dat.id}").getContext("2d");
                               //window.myLine_${dat.id} = new Chart(ctx_${dat.id}).Line(lineChartData_${dat.id}, {
@@ -307,6 +315,13 @@
 
                             }
                             
+            Chart.defaults.global.scaleLabel = function(label){
+                return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            };
+
+            Chart.defaults.global.multiTooltipTemplate = function(label){
+                return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
+            ;
                             var ctx_${dat.id} = $("#canvas_${dat.id}").get(0).getContext("2d");
                               
                             $(function(){

@@ -79,6 +79,10 @@ class AddSchema(colander.Schema):
                     colander.Boolean())
     amount     = Amount()                
 
+    updated = colander.SchemaNode(
+                    colander.Date(),
+                    oid='updated')
+
 class EditSchema(AddSchema):
     id = colander.SchemaNode(colander.String(),
             missing=colander.drop,
@@ -116,8 +120,9 @@ class view_carousel(BaseViews):
             columns.append(ColumnDT('amt_hari',  filter=self._number_format))
             columns.append(ColumnDT('order_id',  filter=self._number_format))
             columns.append(ColumnDT('is_aktif',  filter=self._number_format))
+            columns.append(ColumnDT('updated', filter=self._DTstrftime))
             
-            query = DBSession.query(Eis)
+            query = DBSession.query(Eis).order_by(Eis.kode)
             rowTable = DataTables(req, Eis, query, columns)
             return rowTable.output_result()
         

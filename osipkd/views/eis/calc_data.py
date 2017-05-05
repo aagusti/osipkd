@@ -53,6 +53,10 @@ class eis_calc(BaseViews):
             row_data = DBSession.query(func.sum(AR.amount).label('s')).\
                           filter(AR.tahun==tahun, AR.bulan < eis_month,
                                  AR.kode.ilike("%s%%" % row.kode)).scalar()
+            
+            """row_data = DBSession.query(Eis.amt_tahun.label('s')
+                         ).filter(Eis.tahun==tahun, Eis.kode.ilike("%s%%" % row.kode)).scalar()
+            """
             if row_data:
                 row.amt_tahun = row_data
 

@@ -2,7 +2,7 @@
 <div metal:fill-slot="nav">
     <ul class="nav navbar-nav">
       <li tal:attributes="class request.path == '/app' and 'active'">
-          <a href="/" class="navbar-brand"><strong>DINAS PENDAPATAN DAERAH KOTA BOGOR</strong></a></li>
+          <a href="/" class="navbar-brand"><strong>DINAS PENDAPATAN DAERAH KOTA DEPOK</strong></a></li>
     </ul>
 </div>
 
@@ -13,15 +13,15 @@
   <script type="text/javascript"  src="/static/js/chart/legend/legend.js"> </script>
   
   <div class="nav-side-menu">
-    <div class="brand">Brand Logo</div>
+    <div class="brand">Eksekutif Summary</div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
     <div class="menu-list">
       <ul id="menu-content" class="menu-content collapse out">
-        <li>
+        <!--li>
           <a href="#">
             <i class="fa fa-dashboard fa-lg"></i> Executive Summary
           </a>
-        </li>
+        </li-->
         <li  data-toggle="collapse" data-target="#tabular" class="collapsed active">
           <a href="#"><i class="fa fa-gift fa-lg"></i> Tabular <span class="arrow"></span></a>
         </li>

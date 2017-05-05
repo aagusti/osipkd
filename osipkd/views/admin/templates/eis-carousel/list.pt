@@ -15,6 +15,7 @@
                 <th>Amt. Hari</th>
                 <th>Order</th>
                 <th>Aktif</th>
+                <th>Tgl.Update</th>
             </tr>
         </thead>
         <tbody>
@@ -67,14 +68,15 @@
           "aoColumns": [
               null,
               {"width": "50px"},
-              {"width": "75px"},
-              null,
+              {"width": "60px"},
+              {"width": "350px", "sClass":"left"},
               {"width": "100px", "sClass":"right"},
               {"width": "100px", "sClass":"right"},
               {"width": "100px", "sClass":"right"},
               {"width": "100px", "sClass":"right"},
-              {"width": "50px", "sClass":"center"},
-              {"width": "60px", "sClass":"center"},
+              {"width": "40px", "sClass":"center"},
+              {"width": "40px", "sClass":"center"},
+              {"width": "120px", "sClass":"center"},
           ]
         });
           
