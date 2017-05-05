@@ -9,7 +9,7 @@
 <div metal:fill-slot="content">
   <link href="/static/css/navbar-fixed-left.css" rel="stylesheet"-->    
   <link href="/static/js/chart/legend/legend.css" rel="stylesheet"-->    
-  <script type="text/javascript"  src="/static/js/chart/Chart.min.js"> </script>
+  <script type="text/javascript"  src="/static/js/chart/Chart.js"> </script>
   <script type="text/javascript"  src="/static/js/chart/legend/legend.js"> </script>
   
   <div class="nav-side-menu">

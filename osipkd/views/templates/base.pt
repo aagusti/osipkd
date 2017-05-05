@@ -39,6 +39,7 @@
     <!--script src="/static/datatables/media/js/jquery.jeditable.js'"></script>
     <script src="/static/datatables/extensions/TableTools/media/js/ZeroClipboard.js"></script-->
 
+<<<<<<< HEAD
     
   </head>
 
@@ -92,3 +93,58 @@
   </body>
 </html>
 
+=======
+    
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Eksekutif Summary</a>
+        </div>
+        
+        <div class="navbar-collapse collapse">
+          <div metaldefine-slot="nav"></div> 
+          <!--ul class="nav navbar-nav">
+            <li tal:attributes="class request.path == '/app' and 'active'">
+                <a href="/app"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          </ul-->
+          
+          <ul class="nav navbar-nav navbar-right">          
+            <li tal:attributes="class request.path == '/login' and 'active'">
+                <a href="/login">Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+    
+      <div tal:condition="request.session.peek_flash()">
+        <div class="alert alert-success" tal:repeat="message request.session.pop_flash()">${message}</div>
+      </div>
+      <div tal:condition="request.session.peek_flash('error')">
+        <div class="alert alert-danger" tal:repeat="message request.session.pop_flash('error')">${message}</div>
+      </div>
+          
+      <div metal:define-slot="content"></div>    
+
+    </div> <!-- /container -->
+
+
+
+        
+    <div metaldefine-slot="scripts"></div>       
+  </body>
+</html>
+
+>>>>>>> cef4bef7d81853da150c620a2eb94ee6f22b63f9

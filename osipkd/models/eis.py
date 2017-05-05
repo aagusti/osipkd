@@ -45,7 +45,7 @@ class Eis(DefaultModel, Base):
     updated    = Column(DateTime)
     created    = Column(DateTime)
     create_uid = Column(Integer)
-    update_uid = Column(Integer)    
+    update_uid = Column(Integer)
 
     @classmethod
     def sum_data(cls, kode, tahun):

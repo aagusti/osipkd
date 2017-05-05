@@ -15,7 +15,11 @@
                 <th>Amt. Hari</th>
                 <th>Order</th>
                 <th>Aktif</th>
+<<<<<<< HEAD
                 <th>Tgl.Update</th>
+=======
+                <th>Tgl.Updated</th>
+>>>>>>> cef4bef7d81853da150c620a2eb94ee6f22b63f9
             </tr>
         </thead>
         <tbody>

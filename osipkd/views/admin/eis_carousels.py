@@ -78,6 +78,11 @@ class AddSchema(colander.Schema):
     is_aktif   = colander.SchemaNode(
                     colander.Boolean())
     amount     = Amount()                
+    
+    updated  = colander.SchemaNode(
+                    colander.Date(),
+                    oid='updated')
+                    
 
     updated = colander.SchemaNode(
                     colander.Date(),

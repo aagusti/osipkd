@@ -218,6 +218,7 @@
                               ]
 
                             }
+<<<<<<< HEAD
                                                         
             Chart.defaults.global.scaleLabel = function(label){
                 return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -227,6 +228,18 @@
                 return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
             ;
 
+=======
+                                      
+                            Chart.defaults.global.scaleLabel = function(label){
+                                return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                            };
+                            
+                            Chart.defaults.global.multiTooltipTemplate = function(label){
+                                return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
+                            ; 
+            
+                                      
+>>>>>>> cef4bef7d81853da150c620a2eb94ee6f22b63f9
                             $(function(){
                               var ctx_${dat.id} = document.getElementById("canvas_${dat.id}").getContext("2d");
                               //window.myLine_${dat.id} = new Chart(ctx_${dat.id}).Line(lineChartData_${dat.id}, {
@@ -315,6 +328,7 @@
 
                             }
                             
+<<<<<<< HEAD
             Chart.defaults.global.scaleLabel = function(label){
                 return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
             };
@@ -322,6 +336,16 @@
             Chart.defaults.global.multiTooltipTemplate = function(label){
                 return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
             ;
+=======
+                            Chart.defaults.global.scaleLabel = function(label){
+                                return label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                            };
+                            
+                            Chart.defaults.global.multiTooltipTemplate = function(label){
+                                return label.datasetLabel + ': ' + label.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");}
+                            ; 
+                            
+>>>>>>> cef4bef7d81853da150c620a2eb94ee6f22b63f9
                             var ctx_${dat.id} = $("#canvas_${dat.id}").get(0).getContext("2d");
                               
                             $(function(){
